@@ -46,6 +46,6 @@ fn numberFail(n: u8) MyNumberError {
         return MyNumberError.TooSmall;
     } else {
         return MyNumberError.TooFour;
-    };
+    }
 }
 
