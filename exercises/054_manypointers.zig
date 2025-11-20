@@ -33,7 +33,7 @@ pub fn main() void {
     // we can CONVERT IT TO A SLICE. (Hint: we do know the length!)
     //
     // Please fix this line so the print statement below can print it:
-    const zen12_string: []const u8 = zen_manyptr;
+    const zen12_string: []const u8 = zen_manyptr[0..21];
 
     // Here's the moment of truth!
     std.debug.print("{s}\n", .{zen12_string});
@@ -53,3 +53,4 @@ pub fn main() void {
 //   |  []u8         |  slice of u8s                                |
 //   |  []const u8   |  slice of immutable u8s                      |
 //   +---------------+----------------------------------------------+
+

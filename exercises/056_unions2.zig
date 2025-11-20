@@ -31,7 +31,6 @@
 const std = @import("std");
 
 const InsectStat = enum { flowers_visited, still_alive };
-
 const Insect = union(InsectStat) {
     flowers_visited: u16,
     still_alive: bool,
@@ -44,14 +43,14 @@ pub fn main() void {
     std.debug.print("Insect report! ", .{});
 
     // Could it really be as simple as just passing the union?
-    printInsect(???);
-    printInsect(???);
+    printInsect(ant);
+    printInsect(bee);
 
     std.debug.print("\n", .{});
 }
 
 fn printInsect(insect: Insect) void {
-    switch (???) {
+    switch (insect) {
         .still_alive => |a| std.debug.print("Ant alive is: {}. ", .{a}),
         .flowers_visited => |f| std.debug.print("Bee visited {} flowers. ", .{f}),
     }
@@ -62,3 +61,4 @@ fn printInsect(insect: Insect) void {
 // union types". Now we can add our own unions to the mix to handle
 // whatever situations we might encounter:
 //          union(Tag) { value: u32, toxic_ooze: void }
+

@@ -15,7 +15,7 @@ pub fn main() void {
 
     std.debug.print("A Dramatic Story: ", .{});
 
-    for (???) |???| {
+    for (story) |scene| {
         if (scene == 'h') std.debug.print(":-)  ", .{});
         if (scene == 's') std.debug.print(":-(  ", .{});
         if (scene == 'n') std.debug.print(":-|  ", .{});
@@ -29,3 +29,4 @@ pub fn main() void {
 // Also note that 'for' loops have recently become more flexible
 // and powerful (two years after this exercise was written).
 // More about that in a moment.
+

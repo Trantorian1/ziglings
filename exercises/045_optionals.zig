@@ -25,7 +25,7 @@
 const std = @import("std");
 
 pub fn main() void {
-    const result = deepThought();
+    const result = deepThought() orelse 42;
 
     // Please threaten the result so that answer is either the
     // integer value from deepThought() OR the number 42:
@@ -49,3 +49,4 @@ fn deepThought() ?u8 {
 //    var maybe_bad: Error!u32 = Error.Evil;
 //    var number: u32 = maybe_bad catch 0;
 //
+
