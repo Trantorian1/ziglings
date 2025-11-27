@@ -106,7 +106,7 @@ pub fn main() !void {
     for (my_insects) |insect| {
         // Almost done! We want to print() each insect with a
         // single method call here.
-        ???
+        insect.print();
     }
 }
 
@@ -125,3 +125,4 @@ pub fn main() !void {
 // the interface!
 //
 // Doctor Zoraptera loves it.
+

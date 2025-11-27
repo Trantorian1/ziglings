@@ -80,7 +80,7 @@ pub fn main() !void {
     y ^= x;
 
     // What must be written here?
-    ???;
+    x ^= y;
 
     print("x = {b}; y = {b}\n", .{ x, y });
 }
@@ -93,3 +93,4 @@ pub fn main() !void {
 //
 // For Crypto it is better not to use this, but in sorting algorithms like
 // Bubble Sort it works very well.
+

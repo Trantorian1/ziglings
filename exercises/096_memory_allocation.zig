@@ -64,7 +64,7 @@ pub fn main() !void {
     const allocator = arena.allocator();
 
     // allocate memory for this array
-    const avg: []f64 = ???;
+    const avg: []f64 = try allocator.create([arr.len]f64);
 
     runningAverage(arr, avg);
     std.debug.print("Running Average: ", .{});
@@ -76,3 +76,4 @@ pub fn main() !void {
 
 // For more details on memory allocation and the different types of
 // memory allocators, see https://www.youtube.com/watch?v=vHWiDx_l4V0
+

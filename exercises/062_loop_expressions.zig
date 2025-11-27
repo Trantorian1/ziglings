@@ -47,7 +47,7 @@ pub fn main() void {
     // return it from the for loop.
     const current_lang: ?[]const u8 = for (langs) |lang| {
         if (lang.len == 3) break lang;
-    };
+    } else null;
 
     if (current_lang) |cl| {
         print("Current language: {s}\n", .{cl});
@@ -55,3 +55,4 @@ pub fn main() void {
         print("Did not find a three-letter language name. :-(\n", .{});
     }
 }
+

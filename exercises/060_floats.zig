@@ -43,7 +43,7 @@ pub fn main() void {
     //
     // We'll convert this weight from pounds to metric units at a
     // conversion of 0.453592 kg to the pound.
-    const shuttle_weight: f16 = 0.453592 * 4480e3;
+    const shuttle_weight: f32 = 0.453592 * 4480e3;
 
     // By default, float values are formatted in standard decimal
     // notation. Experiment with '{d}' and '{d:.3}' to see how
@@ -93,3 +93,4 @@ pub fn main() void {
 //
 // C compatibility fact: There is also a Zig floating point type
 // specifically for working with C ABIs called c_longdouble.
+

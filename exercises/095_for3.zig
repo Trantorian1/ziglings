@@ -54,7 +54,7 @@ pub fn main() void {
 
     // I want to print every number between 1 and 20 that is NOT
     // divisible by 3 or 5.
-    for (???) |n| {
+    for (1..20) |n| {
 
         // The '%' symbol is the "modulo" operator and it
         // returns the remainder after division.
@@ -71,3 +71,4 @@ pub fn main() void {
 // Of course, both 'while' and 'for' have different advantages.
 // Exercises 11, 12, and 14 would NOT be simplified by switching
 // a 'while' for a 'for'.
+
